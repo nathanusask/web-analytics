@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	. "github.com/aliaslam/webanalytics/utils"
+	. "github.com/nathanusask/web-analytics/utils"
 )
 
 /*
@@ -14,7 +14,7 @@ Sample POST request: http://localhost:8080/?clientid=28795421456&guid=1041e0c3a-
 Response: 200 OK
 */
 
-// AddPageview accepts a POST request and presist the hit in Redis
+// SetPageview accepts a POST request and presist the hit in Redis
 func SetPageview(writer http.ResponseWriter, request *http.Request) {
 
 	if request.Method == "POST" {
